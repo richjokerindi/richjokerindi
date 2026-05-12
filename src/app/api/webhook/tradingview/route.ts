@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 type Incoming = {
@@ -264,7 +264,7 @@ export async function POST(req: NextRequest) {
       if (logError) return NextResponse.json({ error: logError.message }, { status: 500 });
 
       await sendTelegramTradingAlert([
-        "ðŸ“Š *RICH JOKEY INDI SIGNAL Closed*",
+        "📊 *RICH JOKER INDI SIGNAL Closed*",
         `*Mode:* ${current.mode.toUpperCase()}`,
         `*Pair:* ${pair}`,
         `*Type:* ${current.type.toUpperCase()}`,
@@ -358,7 +358,7 @@ export async function POST(req: NextRequest) {
     if (logError) return NextResponse.json({ error: logError.message }, { status: 500 });
 
     await sendTelegramTradingAlert([
-      "ðŸ“Š *RICH JOKEY INDI SIGNAL Closed*",
+      "📊 *RICH JOKER INDI SIGNAL Closed*",
       `*Mode:* ${mode.toUpperCase()}`,
       `*Pair:* ${pair}`,
       `*Type:* ${current.type.toUpperCase()}`,
@@ -511,7 +511,7 @@ export async function POST(req: NextRequest) {
   }
 
   await sendTelegramTradingAlert([
-    "ðŸš¨ *New RICH JOKEY INDI SIGNAL*",
+    "🚨 *New RICH JOKER INDI SIGNAL*",
     `*Mode:* ${mode.toUpperCase()}`,
     `*Pair:* ${pair}`,
     `*Type:* ${type.toUpperCase()}`,
@@ -545,7 +545,7 @@ export async function POST(req: NextRequest) {
     }
 
     await sendTelegramTradingAlert([
-      "ðŸ“Š *RICH JOKEY INDI SIGNAL Closed*",
+      "📊 *RICH JOKER INDI SIGNAL Closed*",
       `*Mode:* ${mode.toUpperCase()}`,
       `*Pair:* ${pair}`,
       `*Type:* ${type.toUpperCase()}`,

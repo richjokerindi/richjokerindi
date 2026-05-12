@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -13,22 +13,22 @@ export default function LandingPage() {
       {
         market: "XAUUSD",
         status: "THE MOVE CLOSED @ TP2",
-        entry: "2364.20",
-        target: "2378.40",
+        entry: "4721.80",
+        target: "4768.40",
         result: "+142.0 PIPS",
       },
       {
         market: "XAUUSD",
         status: "THE MOVE ACTIVE",
-        entry: "2381.50",
-        target: "2390.00",
+        entry: "4816.30",
+        target: "4872.90",
         result: "Awaiting confirmation",
       },
       {
         market: "XAUUSD",
         status: "THE PLAY LOGGED",
-        entry: "2352.70",
-        target: "2361.20",
+        entry: "4699.50",
+        target: "4742.10",
         result: "+85.0 PIPS",
       },
     ],
@@ -111,8 +111,8 @@ export default function LandingPage() {
             <div className="flex h-11 w-11 items-center justify-center overflow-hidden">
               {!logoFailed ? (
                 <Image
-                  src="/rji-logo-official.png"
-                  alt="RICH JOKEY INDI Logo"
+                  src="/rji-logo-official-v2.png"
+                  alt="RICH JOKER INDI Logo"
                   width={44}
                   height={44}
                   className="h-11 w-11 object-contain mix-blend-screen drop-shadow-[0_0_14px_rgba(0,168,107,0.2)]"
@@ -124,7 +124,7 @@ export default function LandingPage() {
               )}
             </div>
             <div>
-              <p className="text-xl font-black tracking-tight text-[#d4af37]">RICH JOKEY <span className="text-[#00a86b]">INDI</span></p>
+              <p className="text-xl font-black tracking-tight text-[#d4af37]">RICH JOKER <span className="text-[#00a86b]">INDI</span></p>
               <p className="text-[10px] uppercase tracking-[0.24em] text-[#c0c0c0]/65">The Market is a Joke, if you don't have the Edge.</p>
             </div>
           </div>
@@ -145,8 +145,8 @@ export default function LandingPage() {
         <div className="mb-7 flex justify-center">
           <div className="p-1">
             <Image
-              src="/rji-logo-official.png"
-              alt="RICH JOKEY INDI Crest"
+              src="/rji-logo-official-v2.png"
+              alt="RICH JOKER INDI Crest"
               width={272}
               height={272}
               className="rji-heartbeat h-52 w-52 object-contain mix-blend-screen drop-shadow-[0_0_30px_rgba(0,168,107,0.24)] md:h-64 md:w-64"
@@ -175,7 +175,7 @@ export default function LandingPage() {
           </span>
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-[#c0c0c0]/80 md:text-xl">
-          RICH JOKEY INDI delivers precision gold signals with disciplined risk parameters. Fast entry intelligence, clear The Play structure, and measurable execution logs.
+          RICH JOKER INDI delivers precision gold signals with disciplined risk parameters. Fast entry intelligence, clear The Play structure, and measurable execution logs.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -434,7 +434,7 @@ export default function LandingPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-20">
-        <div className="rounded-2xl border border-[#ef4444]/35 bg-[#2a1116]/45 p-5 text-sm text-[#fca5a5]">
+        <div className="rounded-2xl border border-[#ef4444]/35 bg-[#2a1116]/45 p-5 text-center text-sm text-[#fca5a5]">
           Capital Protection First: High reward requires controlled risk. Never exceed your personal risk limit, and avoid emotional over-exposure.
         </div>
       </section>
@@ -446,7 +446,7 @@ export default function LandingPage() {
       </div>
 
       <footer className="border-t border-[#d4af37]/15 px-6 py-10 text-center text-xs text-[#c0c0c0]/60">
-        <p>(C) 2026 RICH JOKEY INDI. Financial Signals.</p>
+        <p>(C) 2026 RICH JOKER INDI. Financial Signals.</p>
         <p className="mx-auto mt-2 max-w-3xl">Risk Warning: Trading carries risk. Past performance does not guarantee future results. Always apply disciplined risk management.</p>
       </footer>
     </main>

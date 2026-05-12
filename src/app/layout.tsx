@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -13,25 +13,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "RICH JOKEY INDI",
+  title: "RICH JOKER INDI",
   description: "The Market is a Joke, if you don't have the Edge.",
-  metadataBase: new URL("https://richjokeyindi.com"),
+  metadataBase: new URL("https://richjokerindi.com"),
   icons: {
-    icon: "/rji-logo-official.png",
-    shortcut: "/rji-logo-official.png",
-    apple: "/rji-logo-official.png",
+    icon: "/rji-logo-official-v2.png",
+    shortcut: "/rji-logo-official-v2.png",
+    apple: "/rji-logo-official-v2.png",
   },
   openGraph: {
-    title: "RICH JOKEY INDI",
+    title: "RICH JOKER INDI",
     description: "Don't play the game, beat the house.",
-    url: "https://richjokeyindi.com",
-    siteName: "RICH JOKEY INDI",
+    url: "https://richjokerindi.com",
+    siteName: "RICH JOKER INDI",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "RICH JOKEY INDI | The Market is a Joke, if you don't have the Edge.",
+        alt: "RICH JOKER INDI | The Market is a Joke, if you don't have the Edge.",
       },
     ],
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RICH JOKEY INDI",
+    title: "RICH JOKER INDI",
     description: "The Market is a Joke, if you don't have the Edge.",
     images: ["/opengraph-image.png"],
   },

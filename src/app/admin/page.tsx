@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
@@ -586,10 +586,10 @@ export default function AdminPage() {
       <main className="rji-shell min-h-screen bg-slate-950 text-slate-100 p-6">
         <div className="mx-auto max-w-md rounded-xl border border-slate-700 bg-slate-900/70 p-5">
           <div className="mb-3 flex items-center gap-2">
-            <Image src="/rji-logo-official.png" alt="RJI logo" width={30} height={30} className="h-7 w-7 object-contain mix-blend-screen" />
+            <Image src="/rji-logo-official-v2.png" alt="RJI logo" width={30} height={30} className="h-7 w-7 object-contain mix-blend-screen" />
             <p className="text-[10px] uppercase tracking-[0.16em] text-[#d4af37]">Inner Circle Admin</p>
           </div>
-          <h1 className="text-xl font-bold">RICH JOKEY INDI Admin CRM</h1>
+          <h1 className="text-xl font-bold">RICH JOKER INDI Admin CRM</h1>
           <p className="mt-1 text-sm text-slate-400">Enter admin key</p>
           <input value={adminKey} onChange={(e) => setAdminKey(e.target.value)} className="mt-4 w-full rounded border border-slate-600 bg-slate-950 px-3 py-2" />
           <button onClick={() => void loadAll()} className="mt-3 w-full rounded bg-blue-600 py-2 font-semibold">Unlock</button>
@@ -605,8 +605,8 @@ export default function AdminPage() {
         <header className="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <Image src="/rji-logo-official.png" alt="RJI logo" width={38} height={38} className="h-9 w-9 object-contain mix-blend-screen" />
-              <h1 className="text-2xl font-bold tracking-tight">RICH JOKEY INDI Admin CRM</h1>
+              <Image src="/rji-logo-official-v2.png" alt="RJI logo" width={38} height={38} className="h-9 w-9 object-contain mix-blend-screen" />
+              <h1 className="text-2xl font-bold tracking-tight">RICH JOKER INDI Admin CRM</h1>
             </div>
             <div className="flex flex-wrap gap-2">
               <a

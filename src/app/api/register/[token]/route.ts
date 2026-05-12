@@ -1,4 +1,4 @@
-﻿import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 import { generateAccessKey } from "@/lib/keygen";
 
@@ -18,7 +18,7 @@ async function sendTelegramRegisterAlert(payload: {
   if (!botToken || !chatId) return;
 
   const message = [
-    "?? *New RICH JOKEY INDI SIGNAL Registration*",
+    "?? *New RICH JOKER INDI SIGNAL Registration*",
     "",
     `*Name:* ${payload.name}`,
     `*Email:* ${payload.email}`,

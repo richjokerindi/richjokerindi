@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
@@ -624,8 +624,8 @@ export default function Home() {
         }`}>
           <div className="mb-4 flex justify-center">
             <Image
-              src="/rji-logo-official.png"
-              alt="RICH JOKEY INDI logo"
+              src="/rji-logo-official-v2.png"
+              alt="RICH JOKER INDI logo"
               width={144}
               height={144}
               priority
@@ -646,7 +646,7 @@ export default function Home() {
             </button>
           </div>
           <h1 className={`mb-2 text-2xl font-semibold tracking-[0.03em] ${loginDark ? "text-[#d4af37]" : "text-[#1f3a8a]"}`}>
-            RICH JOKEY INDI INNER CIRCLE
+            RICH JOKER INDI INNER CIRCLE
           </h1>
           <label className={`mb-2 block text-xs uppercase tracking-[0.25em] ${loginDark ? "text-[#c0c0c0]" : "text-[#334155]"}`}>Authorization Key</label>
           <div className="relative">
@@ -712,7 +712,7 @@ export default function Home() {
           <header className="mb-5 border-b border-emerald-400/20 pb-4 text-[11px] uppercase tracking-[0.16em] text-emerald-300 sm:text-xs sm:tracking-[0.2em]">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="exec-top-brand leading-none text-blue-400">RICH JOKEY INDI SIGNAL</p>
+                <p className="exec-top-brand leading-none text-blue-400">RICH JOKER INDI SIGNAL</p>
                 <p className="exec-top-sub mt-1">Profitable Discipline Starts Here</p>
               </div>
               <div className="exec-action-group flex flex-wrap items-center gap-2">

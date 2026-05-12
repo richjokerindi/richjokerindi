@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -95,7 +95,7 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
   const downloadKeyTxt = () => {
     if (!result) return;
     const lines = [
-      "RICH JOKEY INDI SIGNAL SYSTEM - ACCESS KEY",
+      "RICH JOKER INDI SIGNAL SYSTEM - ACCESS KEY",
       `Access Key: ${result.access_key}`,
       `Expires At: ${new Date(result.expired_at).toLocaleString()}`,
       `Package: ${pkg?.package_name ?? "-"}`,
@@ -121,7 +121,7 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
       <section className={`w-full max-w-xl rounded-2xl border p-6 ${isDark ? "border-slate-700 bg-slate-900/70" : "border border-[#0f172a]/20 bg-[#f8fafc] shadow-[0_10px_30px_rgba(15,23,42,0.14)]"}`}>
         <div className="mb-4 flex items-center gap-3">
           <Image
-            src="/rji-logo-official.png"
+            src="/rji-logo-official-v2.png"
             alt="RJI logo"
             width={56}
             height={56}
@@ -137,7 +137,7 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
             {isDark ? "Light" : "Dark"}
           </button>
         </div>
-        <h1 className={`text-2xl font-bold ${isDark ? "text-slate-100" : "text-[#1f2937]"}`}>RICH JOKEY INDI Registration</h1>
+        <h1 className={`text-2xl font-bold ${isDark ? "text-slate-100" : "text-[#1f2937]"}`}>RICH JOKER INDI Registration</h1>
         <p className={`mt-1 text-sm ${isDark ? "text-slate-400" : "text-[#475569]"}`}>Complete your details to receive access key instantly.</p>
 
         {status && <p className={`mt-4 rounded px-3 py-2 text-sm ${status.includes("copied") || status.includes("Loading") || status === "" ? (isDark ? "bg-sky-500/10 text-sky-300" : "bg-sky-100 text-sky-700") : (isDark ? "bg-rose-500/10 text-rose-300" : "bg-rose-100 text-rose-700")}`}>{status}</p>}

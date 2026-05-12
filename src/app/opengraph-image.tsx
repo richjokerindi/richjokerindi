@@ -1,7 +1,7 @@
-﻿import { ImageResponse } from "next/og";
+import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "RICH JOKEY INDI | The Market is a Joke, if you don't have the Edge.";
+export const alt = "RICH JOKER INDI | The Market is a Joke, if you don't have the Edge.";
 export const size = {
   width: 1200,
   height: 630,
@@ -28,7 +28,7 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             <div style={{ fontSize: 66, fontWeight: 800, letterSpacing: -2, color: "#D4AF37" }}>
-              RICH JOKEY INDI <span style={{ color: "#c0c0c0" }}>SIGNAL</span>
+              RICH JOKER INDI <span style={{ color: "#c0c0c0" }}>SIGNAL</span>
             </div>
             <div style={{ fontSize: 28, opacity: 0.9 }}>Don't play the game, beat the house.</div>
           </div>
