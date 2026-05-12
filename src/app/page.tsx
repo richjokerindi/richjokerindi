@@ -323,7 +323,7 @@ export default function LandingPage() {
           {[
             {
               name: "7 Days",
-              price: "99 USD",
+              price: "50 USD",
               note: "Trial speed cycle",
               features: [
                 "Realtime XAUUSD Signal Feed",
@@ -337,7 +337,7 @@ export default function LandingPage() {
             },
             {
               name: "15 Days",
-              price: "199 USD",
+              price: "100 USD",
               note: "Balanced execution",
               features: [
                 "Realtime XAUUSD Signal Feed",
@@ -351,7 +351,7 @@ export default function LandingPage() {
             },
             {
               name: "30 Days",
-              price: "249 USD",
+              price: "300 USD",
               note: "Full inner circle",
               features: [
                 "Realtime XAUUSD Signal Feed",
