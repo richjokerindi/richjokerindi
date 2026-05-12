@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "RICH JOKER INDI",
   description: "The Market is a Joke, if you don't have the Edge.",
-  metadataBase: new URL("https://richjokerindi.com"),
+  metadataBase: new URL("https://richjoker.ezos.my"),
   icons: {
     icon: "/rji-logo-official-v2.png",
     shortcut: "/rji-logo-official-v2.png",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RICH JOKER INDI",
     description: "Don't play the game, beat the house.",
-    url: "https://richjokerindi.com",
+    url: "https://richjoker.ezos.my",
     siteName: "RICH JOKER INDI",
     images: [
       {
