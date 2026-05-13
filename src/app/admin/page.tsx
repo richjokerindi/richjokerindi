@@ -598,7 +598,7 @@ export default function AdminPage() {
             <Image src="/rji-logo-official-v2.png" alt="RJI logo" width={30} height={30} className="h-7 w-7 object-contain mix-blend-screen" />
             <p className="text-[10px] uppercase tracking-[0.16em] text-[#d4af37]">Inner Circle Admin</p>
           </div>
-          <h1 className="text-xl font-bold">RICH JOKER INDI Admin CRM</h1>
+          <h1 className="text-xl font-bold">RICH JOKER Admin</h1>
           <p className="mt-1 text-sm text-slate-400">Enter admin key</p>
           <input value={adminKey} onChange={(e) => setAdminKey(e.target.value)} className="mt-4 w-full rounded border border-slate-600 bg-slate-950 px-3 py-2" />
           <button onClick={() => void loadAll()} className="mt-3 w-full rounded bg-blue-600 py-2 font-semibold">Unlock</button>
@@ -615,7 +615,7 @@ export default function AdminPage() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <Image src="/rji-logo-official-v2.png" alt="RJI logo" width={38} height={38} className="h-9 w-9 object-contain mix-blend-screen" />
-              <h1 className="text-2xl font-bold tracking-tight">RICH JOKER INDI Admin CRM</h1>
+              <h1 className="text-2xl font-bold tracking-tight">RICH JOKER Admin</h1>
             </div>
             <div className="flex flex-wrap gap-2">
               <a

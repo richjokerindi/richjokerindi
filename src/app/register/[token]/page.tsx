@@ -176,7 +176,7 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
   const downloadKeyTxt = () => {
     if (!result) return;
     const lines = [
-      "RICH JOKER INDI SIGNAL SYSTEM - ACCESS KEY",
+      "RICH JOKER SIGNAL SYSTEM - ACCESS KEY",
       `Access Key: ${result.access_key}`,
       `Expires At: ${new Date(result.expired_at).toLocaleString()}`,
       `Package: ${pkg?.package_name ?? "-"}`,
@@ -219,7 +219,7 @@ export default function RegisterPage({ params }: { params: Promise<{ token: stri
             {isDark ? "Light" : "Dark"}
           </button>
         </div>
-        <h1 className={`text-2xl font-bold ${isDark ? "text-slate-100" : "text-[#1f2937]"}`}>RICH JOKER INDI Registration</h1>
+        <h1 className={`text-2xl font-bold ${isDark ? "text-slate-100" : "text-[#1f2937]"}`}>RICH JOKER Registration</h1>
         <p className={`mt-1 text-sm ${isDark ? "text-slate-400" : "text-[#475569]"}`}>Complete your details to receive access key instantly.</p>
 
         {status && <p className={`mt-4 rounded px-3 py-2 text-sm ${status.includes("copied") || status.includes("Loading") || status === "" ? (isDark ? "bg-sky-500/10 text-sky-300" : "bg-sky-100 text-sky-700") : (isDark ? "bg-rose-500/10 text-rose-300" : "bg-rose-100 text-rose-700")}`}>{status}</p>}

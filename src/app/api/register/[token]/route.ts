@@ -18,7 +18,7 @@ async function sendTelegramRegisterAlert(payload: {
   if (!botToken || !chatId) return;
 
   const message = [
-    "*New RICH JOKER INDI SIGNAL Registration*",
+    "*New RICH JOKER Registration*",
     "",
     `*Name:* ${payload.name}`,
     `*Email:* ${payload.email}`,
