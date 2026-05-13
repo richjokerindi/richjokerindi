@@ -109,6 +109,7 @@ export default function AdminPage() {
     introducer: "",
     package_name: "Package 7D",
     status: "active",
+    key_expired_at: "",
   });
   const [editDraft, setEditDraft] = useState<Record<string, { outcome: PerfLog["outcome"]; net_pips: string; peak_pips: string; note: string }>>({});
   const [selectedPerfIds, setSelectedPerfIds] = useState<string[]>([]);
@@ -309,6 +310,12 @@ export default function AdminPage() {
   };
 
   const startEditSubscriber = (s: Subscriber) => {
+    const toLocalDatetimeInput = (value: string | null) => {
+      if (!value) return "";
+      const d = new Date(value);
+      const shifted = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
+      return shifted.toISOString().slice(0, 16);
+    };
     setEditingSubId(s.id);
     setEditSubDraft({
       name: s.name,
@@ -317,6 +324,7 @@ export default function AdminPage() {
       introducer: s.introducer ?? "",
       package_name: s.package_name,
       status: s.status,
+      key_expired_at: toLocalDatetimeInput(s.key_expired_at),
     });
   };
 
@@ -331,6 +339,7 @@ export default function AdminPage() {
         introducer: editSubDraft.introducer || null,
         package_name: editSubDraft.package_name,
         status: editSubDraft.status,
+        key_expired_at: editSubDraft.key_expired_at ? new Date(editSubDraft.key_expired_at).toISOString() : null,
       }),
     });
     const json = await res.json();
@@ -765,7 +774,18 @@ export default function AdminPage() {
                       </td>
                       <td className="px-3 py-2 font-mono text-xs">{s.access_key ?? "-"}</td>
                       <td className="px-3 py-2 text-xs">{formatAdminDate(s.last_login_at)}</td>
-                      <td className="px-3 py-2 text-xs">{formatAdminDate(s.key_expired_at)}</td>
+                      <td className="px-3 py-2 text-xs">
+                        {editingSubId === s.id ? (
+                          <input
+                            type="datetime-local"
+                            value={editSubDraft.key_expired_at}
+                            onChange={(e) => setEditSubDraft((d) => ({ ...d, key_expired_at: e.target.value }))}
+                            className="w-44 rounded border border-slate-600 bg-slate-950 px-2 py-1"
+                          />
+                        ) : (
+                          formatAdminDate(s.key_expired_at)
+                        )}
+                      </td>
                       <td className="px-3 py-2">
                         {editingSubId === s.id ? (
                           <div className="flex gap-1">
