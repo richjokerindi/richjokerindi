@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     siteName: "RICH JOKER INDI",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/rji-logo-official-v2.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "RICH JOKER INDI | The Market is a Joke, if you don't have the Edge.",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RICH JOKER INDI",
     description: "The Market is a Joke, if you don't have the Edge.",
-    images: ["/opengraph-image.png"],
+    images: ["/rji-logo-official-v2.png"],
   },
 };
 
