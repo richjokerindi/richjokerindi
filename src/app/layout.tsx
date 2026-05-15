@@ -17,9 +17,14 @@ export const metadata: Metadata = {
   description: "The Market is a Joke, if you don't have the Edge.",
   metadataBase: new URL("https://richjoker.ezos.my"),
   icons: {
-    icon: "/rji-logo-official-v2.png",
-    shortcut: "/rji-logo-official-v2.png",
-    apple: "/rji-logo-official-v2.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand-tab-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand-tab-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "RICH JOKER INDI",
