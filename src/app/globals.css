@@ -306,13 +306,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design-executive .exec-card p:nth-child(2) {
-  font-size: clamp(1.8rem, 2.1vw, 2.35rem);
-  line-height: 1.05;
-  font-weight: 850;
+  font-size: clamp(1.55rem, 1.75vw, 2rem);
+  line-height: 1.08;
+  font-weight: 780;
   letter-spacing: 0.01em;
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
-  text-shadow: 0 0 8px rgba(15, 23, 42, 0.2);
+  text-shadow: 0 0 5px rgba(15, 23, 42, 0.12);
 }
 
 .design-executive .exec-card p:nth-child(2) .inline-flex {
@@ -322,9 +322,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design-executive .exec-card p:nth-child(2) .text-lg {
-  font-size: 1rem !important;
+  font-size: 0.95rem !important;
   line-height: 1.1 !important;
-  font-weight: 750 !important;
+  font-weight: 700 !important;
   opacity: 0.98 !important;
 }
 
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .design-executive.light-theme .exec-card p:nth-child(2) {
   color: #0f172a !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   letter-spacing: 0.005em !important;
   text-shadow: none !important;
 }
