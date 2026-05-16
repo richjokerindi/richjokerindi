@@ -700,7 +700,7 @@ export default function Home() {
           <header className="mb-5 border-b border-emerald-400/20 pb-4 text-[11px] uppercase tracking-[0.16em] text-emerald-300 sm:text-xs sm:tracking-[0.2em]">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="exec-top-brand leading-none text-blue-400">RICH JOKER INDI SIGNAL</p>
+                <p className="exec-top-brand leading-none text-blue-400">RICH JOKER SIGNAL</p>
                 <p className="exec-top-sub mt-1">Profitable Discipline Starts Here</p>
               </div>
               <div className="exec-action-group flex flex-wrap items-center gap-2">

@@ -304,7 +304,7 @@ export async function POST(req: NextRequest) {
       if (logError) return NextResponse.json({ error: logError.message }, { status: 500 });
 
       await sendTelegramTradingAlert([
-        "*RICH JOKER INDI SIGNAL Closed*",
+        "*RICH JOKER SIGNAL Closed*",
         `*Mode:* ${current.mode.toUpperCase()}`,
         `*Pair:* ${pair}`,
         `*Type:* ${current.type.toUpperCase()}`,
@@ -408,7 +408,7 @@ export async function POST(req: NextRequest) {
     if (logError) return NextResponse.json({ error: logError.message }, { status: 500 });
 
     await sendTelegramTradingAlert([
-      "*RICH JOKER INDI SIGNAL Closed*",
+      "*RICH JOKER SIGNAL Closed*",
       `*Mode:* ${mode.toUpperCase()}`,
       `*Pair:* ${pair}`,
       `*Type:* ${current.type.toUpperCase()}`,
@@ -575,7 +575,7 @@ export async function POST(req: NextRequest) {
   }
 
   await sendTelegramTradingAlert([
-    "*New RICH JOKER INDI SIGNAL*",
+    "*New RICH JOKER SIGNAL*",
     `*Mode:* ${mode.toUpperCase()}`,
     `*Pair:* ${pair}`,
     `*Type:* ${type.toUpperCase()}`,
@@ -619,7 +619,7 @@ export async function POST(req: NextRequest) {
     }
 
     await sendTelegramTradingAlert([
-      "*RICH JOKER INDI SIGNAL Closed*",
+      "*RICH JOKER SIGNAL Closed*",
       `*Mode:* ${mode.toUpperCase()}`,
       `*Pair:* ${pair}`,
       `*Type:* ${type.toUpperCase()}`,
