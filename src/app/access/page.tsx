@@ -1103,11 +1103,11 @@ function Card({ title, value, meta, highlight = true, className = "", copyValue 
       } : undefined}
     >
       <p className="mb-1 text-xs uppercase tracking-[0.2em] text-emerald-300/70">{title}</p>
-      <p className={`text-2xl ${highlight ? "text-emerald-300" : "text-red-400"}`}>
+      <p className={`text-3xl font-black tracking-tight ${highlight ? "text-emerald-300" : "text-red-400"}`}>
         {pipsMatch ? (
           <span className="inline-flex items-end gap-2">
             <span>{pipsMatch[1]}</span>
-            <span className="text-lg lowercase tracking-normal opacity-90">pips</span>
+            <span className="text-lg font-bold lowercase tracking-normal opacity-95">pips</span>
           </span>
         ) : (
           value

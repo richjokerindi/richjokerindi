@@ -143,6 +143,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(15, 118, 110, 0.1) !important;
 }
 
+.light-theme .exec-card p:nth-child(2) {
+  color: #0f172a !important;
+  font-weight: 900 !important;
+  text-shadow: none !important;
+}
+
+.light-theme .exec-card-sl p:nth-child(2) {
+  color: #dc2626 !important;
+}
+
 .design-executive {
   background: linear-gradient(180deg, #020617 0%, #010b2a 100%) !important;
   color: #e2e8f0 !important;
