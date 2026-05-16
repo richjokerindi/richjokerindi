@@ -634,7 +634,7 @@ export default function Home() {
             </button>
           </div>
           <h1 className={`mb-2 text-2xl font-semibold tracking-[0.03em] ${loginDark ? "text-[#d4af37]" : "text-[#1f3a8a]"}`}>
-            RICH JOKER INDI INNER CIRCLE
+            RICH JOKER INNER CIRCLE
           </h1>
           <label className={`mb-2 block text-xs uppercase tracking-[0.25em] ${loginDark ? "text-[#c0c0c0]" : "text-[#334155]"}`}>Authorization Key</label>
           <div className="relative">
