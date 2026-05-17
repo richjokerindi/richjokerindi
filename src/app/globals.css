@@ -143,16 +143,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(15, 118, 110, 0.1) !important;
 }
 
-.light-theme .exec-card p:nth-child(2) {
-  color: #0f172a !important;
-  font-weight: 900 !important;
-  text-shadow: none !important;
-}
-
-.light-theme .exec-card-sl p:nth-child(2) {
-  color: #dc2626 !important;
-}
-
 .design-executive {
   background: linear-gradient(180deg, #020617 0%, #010b2a 100%) !important;
   color: #e2e8f0 !important;
@@ -301,18 +291,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .design-executive .exec-card p:first-child {
   letter-spacing: 0.16em !important;
-  opacity: 0.94;
-  font-weight: 700;
+  opacity: 0.8;
 }
 
 .design-executive .exec-card p:nth-child(2) {
-  font-size: clamp(1.55rem, 1.75vw, 2rem);
-  line-height: 1.08;
-  font-weight: 780;
+  font-size: 1.02rem;
+  line-height: 1.18;
+  font-weight: 700;
   letter-spacing: 0.01em;
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
-  text-shadow: 0 0 5px rgba(15, 23, 42, 0.12);
 }
 
 .design-executive .exec-card p:nth-child(2) .inline-flex {
@@ -322,10 +310,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design-executive .exec-card p:nth-child(2) .text-lg {
-  font-size: 0.95rem !important;
+  font-size: 0.82rem !important;
   line-height: 1.1 !important;
-  font-weight: 700 !important;
-  opacity: 0.98 !important;
 }
 
 .design-executive .exec-planner-panel h3,
@@ -552,19 +538,6 @@ h1, h2, h3, h4, h5, h6 {
 .design-executive.light-theme .exec-top-sub,
 .design-executive.light-theme .exec-muted {
   color: #475569 !important;
-}
-
-.design-executive.light-theme .exec-card p:nth-child(2) {
-  color: #0f172a !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.005em !important;
-  text-shadow: none !important;
-}
-
-.design-executive.light-theme .exec-card p:nth-child(2) .text-lg {
-  color: #334155 !important;
-  font-weight: 800 !important;
-  opacity: 1 !important;
 }
 
 .design-executive.light-theme .exec-top-brand {
