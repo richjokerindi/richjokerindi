@@ -772,13 +772,13 @@ export default function Home() {
           </button>
         </nav>
 
-        <div className={`mb-4 flex gap-2 ${isExecutive ? "items-center justify-between" : ""}`}>
-          <div className={`flex gap-2 ${isExecutive ? "exec-pill-group" : ""}`}>
+        <div className={`mb-4 flex gap-2 ${isExecutive ? "flex-wrap items-center justify-between" : ""}`}>
+          <div className={`flex gap-2 ${isExecutive ? "exec-pill-group w-full sm:w-auto" : ""}`}>
             <button onClick={() => setMode("scalping")} className={`rounded border px-3 py-1 text-xs ${mode === "scalping" ? "border-emerald-300 bg-emerald-500/20" : "border-emerald-400/30"} ${isExecutive ? "px-8 py-2.5 text-sm font-extrabold tracking-wide uppercase" : ""} ${isExecutive && mode === "scalping" ? "exec-primary" : ""} ${isExecutive && mode !== "scalping" ? "exec-muted border-transparent bg-transparent" : ""}`}>Scalping</button>
             <button onClick={() => setMode("intraday")} className={`rounded border px-3 py-1 text-xs ${mode === "intraday" ? "border-emerald-300 bg-emerald-500/20" : "border-emerald-400/30"} ${isExecutive ? "px-8 py-2.5 text-sm font-extrabold tracking-wide uppercase" : ""} ${isExecutive && mode === "intraday" ? "exec-primary" : ""} ${isExecutive && mode !== "intraday" ? "exec-muted border-transparent bg-transparent" : ""}`}>Intraday</button>
           </div>
           {isExecutive && (
-            <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-center">
+            <div className="exec-next-move w-full rounded-2xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-center sm:w-auto">
               <p className="text-[10px] uppercase tracking-[0.16em] text-emerald-300/75">Next The Move</p>
               <p className="text-2xl font-semibold text-emerald-200">{nextSignalCountdown}</p>
             </div>

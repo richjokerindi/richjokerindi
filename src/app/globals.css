@@ -425,14 +425,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design-executive.light-theme [class*="text-emerald-"] {
-  color: #1e3a8a !important;
+  color: #111827 !important;
 }
 
 .design-executive.light-theme [class*="text-emerald-300/70"],
 .design-executive.light-theme [class*="text-emerald-300/75"],
 .design-executive.light-theme [class*="text-emerald-300/65"],
 .design-executive.light-theme [class*="text-emerald-400/70"] {
-  color: #334155 !important;
+  color: #1f2937 !important;
 }
 
 .design-executive.light-theme [class*="border-emerald-"] {
@@ -530,43 +530,48 @@ h1, h2, h3, h4, h5, h6 {
 .design-executive.light-theme .exec-card p,
 .design-executive.light-theme .exec-planner-panel p,
 .design-executive.light-theme .exec-signal-panel p {
-  color: #1e3a8a !important;
+  color: #111827 !important;
 }
 
 .design-executive.light-theme .exec-card p:first-child,
 .design-executive.light-theme .exec-planner-panel label,
 .design-executive.light-theme .exec-top-sub,
 .design-executive.light-theme .exec-muted {
-  color: #475569 !important;
+  color: #1f2937 !important;
+}
+
+.design-executive.light-theme .exec-card p:nth-child(2) {
+  color: #0b1220 !important;
+  font-weight: 800 !important;
 }
 
 .design-executive.light-theme .exec-top-brand {
-  color: #1d4ed8 !important;
+  color: #0b1220 !important;
   font-weight: 900 !important;
   letter-spacing: -0.02em !important;
   text-shadow: none !important;
 }
 
 .design-executive.light-theme .exec-top-sub {
-  color: #334155 !important;
+  color: #1f2937 !important;
   font-weight: 700 !important;
   letter-spacing: 0.12em !important;
 }
 
 .design-executive.light-theme .exec-action-group p {
-  color: #334155 !important;
+  color: #111827 !important;
   font-weight: 700 !important;
   line-height: 1.1 !important;
 }
 
 .design-executive.light-theme .exec-action-group p:first-child {
-  color: #334155 !important;
+  color: #111827 !important;
   font-size: 0.62rem !important;
   letter-spacing: 0.13em !important;
 }
 
 .design-executive.light-theme .exec-action-group p:last-child {
-  color: #1e40af !important;
+  color: #111827 !important;
   font-size: 0.82rem !important;
   font-weight: 700 !important;
   letter-spacing: 0.06em !important;
@@ -578,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .design-executive.light-theme .exec-last-sync {
-  color: #475569 !important;
+  color: #1f2937 !important;
   font-weight: 700 !important;
 }
 
@@ -591,13 +596,13 @@ h1, h2, h3, h4, h5, h6 {
 .design-executive.light-theme header .text-\[10px\],
 .design-executive.light-theme header .text-\[11px\],
 .design-executive.light-theme header .text-xs {
-  color: #334155 !important;
+  color: #111827 !important;
   font-weight: 600 !important;
 }
 
 .design-executive.light-theme .exec-card-sl p:nth-child(2),
 .design-executive.light-theme .text-red-400 {
-  color: #e11d48 !important;
+  color: #111827 !important;
 }
 
 .design-executive.light-theme input {
@@ -979,4 +984,52 @@ h1, h2, h3, h4, h5, h6 {
     animation: none !important;
     transform: none !important;
   }
+}
+
+/* Rich Joker access (light mode): keep original layout, only increase text readability */
+.light-theme .exec-top-brand {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+.light-theme .exec-top-sub,
+.light-theme .exec-last-sync,
+.light-theme .exec-muted {
+  color: #111827 !important;
+  font-weight: 500 !important;
+}
+
+.light-theme .exec-card p:first-child,
+.light-theme .exec-planner-panel label {
+  color: #1f2937 !important;
+  font-weight: 500 !important;
+}
+
+.light-theme .exec-card p:nth-child(2) {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+.light-theme .exec-card-sl p:nth-child(2),
+.light-theme .text-red-400 {
+  color: #e11d48 !important;
+  font-weight: 700 !important;
+}
+
+.light-theme .exec-card p:last-child,
+.light-theme .exec-planner-panel p.text-xs {
+  color: #1f2937 !important;
+}
+
+/* Force dark readable text for Rich Joker light-mode access labels/details */
+.light-theme .exec-signal-panel [class*="text-emerald-"],
+.light-theme .exec-planner-panel [class*="text-emerald-"],
+.light-theme .exec-action-group [class*="text-emerald-"],
+.light-theme .exec-last-sync[class*="text-emerald-"] {
+  color: #111827 !important;
+}
+
+.light-theme .exec-signal-panel [class*="text-slate-"],
+.light-theme .exec-planner-panel [class*="text-slate-"] {
+  color: #1f2937 !important;
 }
